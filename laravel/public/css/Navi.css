@@ -1,0 +1,176 @@
+.Grid {
+	display: grid;
+	margin: 0; 
+	padding: 0;
+	margin-top: -20px;
+	grid-template-rows: 5fr 2fr 14fr 4fr;
+}
+
+.hat {
+	display: grid; 
+	/*height: 18vh;*/
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-template-columns: 1fr 5fr;
+	padding-top: 5vh;
+	padding-left: 2vw;
+	/*border-bottom: 3px solid #907459;*/
+	background: linear-gradient(#E5BF9A, #E5BF9A, #FDE4CC);
+}
+
+.mops { 
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin-left: 3vw;
+}
+
+#img_1 {
+	filter: grayscale(1);
+	/*filter: hue-rotate(300deg);*/
+}
+
+.stroke {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	font-family: 'Future';
+	margin-left: -5.5vw;
+	margin-top: 3vh;
+}
+
+.PetrSU {
+	font-size: 25px;
+}
+
+.Sn {
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.nav {
+	/*border-bottom: 3px solid #907459;*/
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-color: #FDE4CC;
+}
+
+.nav-container
+{
+	margin-left: 18vw;
+	font-family: 'Gardens';
+}
+
+.nav div ul 
+{
+	padding:0;
+	margin:0;
+	list-style: none; /*Универсальное свойство, 
+						позволяющее одновременно 
+						задать стиль маркера, его 
+						положение, а также изображение, 
+						которое будет использоваться 
+						в качестве маркера*/
+	position: relative;
+}
+
+.nav div ul li 
+{
+	margin: 0 15vw 0 0;
+	display:inline-block;
+	background:#FDE4CC;
+}
+
+.nav div a 
+{
+	display:block;
+	padding:0 15px;
+	color:Black;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+			
+.nav div ul ul a:hover 
+{
+	 background: #E1C5AB;
+}
+
+.nav div ul a:hover 
+{
+	 background: #E1C5AB;
+	 box-shadow: 0 0 6px 6px #FDE4CC inset;
+	 border-radius: 25px;
+}
+		
+.nav div ul ul 
+{
+	display: none;
+	position: absolute;
+	top: 60px;
+	min-width: 170px;
+}
+			
+.nav div ul li:hover > ul 
+{
+	/*display:inherit;*/
+	display:list-item;
+}
+
+#endLi {
+	
+}
+			
+.nav div ul ul li 
+{
+	min-width:auto;
+	float:none; /*Определяет, по какой стороне 
+				будет выравниваться элемент, 
+				при этом остальные элементы будут 
+				обтекать его с других сторон. Когда 
+				значение свойства float равно none, 
+				элемент выводится на странице как обычно, 
+				при этом допускается, что одна строка 
+				обтекающего текста может быть на той же 
+				линии, что и сам элемент.*/
+	display:list-item;
+	/*position: relative;*/
+	/*border-bottom: 1.5px solid #907459; 
+	border-left: 3px solid #907459; 
+	border-right: 3px solid #907459; 
+	border-top: 1.5px solid #907459;*/
+	
+	
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	background: linear-gradient(#FDE4CC, #FDE4CC, #E5BF9A);
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+.number {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.copy {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+@font-face 
+{ 
+	font-family: 'Future';  
+	src: url("future.otf") format("truetype"); /* все современные браузеры */
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+@font-face 
+{ 
+	font-family: 'Gardens';  
+	src: url("gardens.ttf") format("truetype"); /* все современные браузеры */
+	font-style: normal; 
+	font-weight: normal; 
+} 

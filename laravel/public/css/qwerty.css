@@ -1,0 +1,383 @@
+.Grid {
+	display: grid;
+	margin: 0; 
+	padding: 0;
+	margin-top: -20px;
+	grid-template-rows: 6fr 24fr 4fr;
+	/*background:#DEE3E4;*/
+	background: #E4E4E4;
+}
+
+.Grid::selection {
+	background:
+}
+
+.mane {
+	margin-left: 4vw;
+	margin-top: 2vh;
+	margin-right: 6vw;
+	overflow-y: scroll;
+	height:69vh;
+	border: 1px solid #CDCDCD;
+	border-radius:20px;
+	font-family: 'Gardens';
+	font-size: 18px;
+}
+
+.lega {
+	font-size: 22px;
+}
+
+.hat {
+	display: grid; 
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-template-columns: 1fr 4fr 10fr;
+	padding-top: 5vh;
+	padding-left: 2vw;
+	/*background:#DEE3E4;*/
+	background: #E4E4E4;
+	height: 13vh;
+}
+
+.mops { 
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin-top: 2.5vh;
+}
+
+#img_1 {
+	
+}
+
+.stroke {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	font-family: 'Future';
+	margin-left: -2vw;
+	margin-top: 4.5vh;
+}
+
+.PetrSU {
+	font-size: 20px;
+}
+
+.Sn {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.nav {
+	/*border-bottom: 3px solid #907459;*/
+	/*background:#DEE3E4;*/
+	background: #E4E4E4;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	margin-top: 4.5vh;
+}
+
+.nav-container
+{
+	margin-left: 13vw;
+	font-family: 'Gardens';
+}
+
+.nav div ul 
+{
+	padding:0;
+	margin:0;
+	list-style: none; /*Универсальное свойство, 
+						позволяющее одновременно 
+						задать стиль маркера, его 
+						положение, а также изображение, 
+						которое будет использоваться 
+						в качестве маркера*/
+	position: relative;
+}
+
+.nav div ul li 
+{
+	margin: 0 7vw 0 0;
+	display:inline-block;
+	/*background:#DEE3E4;*/
+	background: #E4E4E4;
+}
+
+.nav div a 
+{
+	display:block;
+	padding:0 15px;
+	color:Black;
+	font-size: 18px;
+	line-height: 50px;
+	text-decoration:none;
+}
+			
+
+.nav div ul a:hover 
+{ 
+	 box-shadow: 0 0 6px 6px #E4E4E4 inset;
+	 border-radius: 25px;
+	 transition: 1s;
+}
+
+.nav div ul a:not(:hover)
+{
+	/*background:#DEE3E4;*/
+	background: #E4E4E4;
+	transition: 1s;
+}
+
+#Main a:hover {
+	/*background: #00CB84;*/
+	/*background: #FF83D4;*/
+	background: #B560EE;
+}
+
+#Students a:hover {
+	background: #B560EE;
+}
+
+#Volonts a:hover {
+	/*background: #6550FF;*/
+	background: #B560EE;
+}
+
+.nav div ul ul 
+{
+	display: none;
+	position: absolute;
+	top: 49px;
+}
+			
+.nav div ul li:hover > ul 
+{
+	/*display:inherit;*/
+	display:list-item;
+}
+			
+.nav div ul ul li 
+{
+	/*min-width:auto;*/
+	float:none; /*Определяет, по какой стороне 
+				будет выравниваться элемент, 
+				при этом остальные элементы будут 
+				обтекать его с других сторон. Когда 
+				значение свойства float равно none, 
+				элемент выводится на странице как обычно, 
+				при этом допускается, что одна строка 
+				обтекающего текста может быть на той же 
+				линии, что и сам элемент.*/
+	display:list-item;
+	border: 1px solid #CDCDCD;
+	background: #E4E4E4;
+	
+}
+
+.bady {
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-template-columns: 1fr 1fr;
+}
+
+.Left {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin-left: 5vw;
+	margin-top: 2vh;
+	margin-right: 2vw;
+	/*border-radius: 30px 0 0 30px;*/
+	overflow-y: scroll;
+	height:69vh;
+	border: 1px solid #CDCDCD;
+	font-family: 'Gardens';
+	font-size: 18px;
+	border-radius:20px;
+}
+
+.Left:hover {
+	/*background: rgba(0, 203, 132, 0.2);*/
+	background: rgba(0, 203, 132, 0.2);
+	transition: 1s;
+}
+
+.Left:not(:hover) {
+	/*background:#DEE3E4;*/
+	background: #E4E4E4;
+	transition: 1s;
+}
+
+.Left::-webkit-scrollbar {
+	width: 20px;
+}
+
+.Left::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.Left::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 203, 132, 0.5);
+}
+
+.Left:hover .oneRight {
+	border: 1px solid rgba(0, 203, 132, 0.5);
+	transition: 1s;
+}
+
+.Left:not(:hover) .twoRight {
+	border: 1px solid #CDCDCD;
+	transition: 1s;
+}
+
+.Left:not(:hover) .oneRight {
+	border: 1px solid #CDCDCD;
+	transition: 1s;
+}
+
+
+.Left:hover .twoRight {
+	border: 1px solid rgba(0, 203, 132, 0.5);
+	transition: 1s;
+}
+
+.Right {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	margin-left: 2vw;
+	margin-top: 2vh;
+	margin-right: 5vw;
+	overflow-y: scroll;
+	height:69vh;
+	border: 1px solid #CDCDCD;
+	font-family: 'Gardens';
+	font-size: 18px;
+	border-radius:20px;
+}
+
+
+.Right:hover {
+	/*background: rgba(240, 236, 1, 0.4);*/
+	background: rgba(0, 203, 132, 0.2);
+	transition: 1s;
+}
+
+.Right:hover .oneRight {
+	border: 1px solid rgba(0, 203, 132, 0.5);
+	transition: 1s;
+}
+
+.Right:not(:hover) .twoRight {
+	border: 1px solid #CDCDCD;
+	transition: 1s;
+}
+
+.Right:not(:hover) .oneRight {
+	border: 1px solid #CDCDCD;
+	transition: 1s;
+}
+
+
+.Right:hover .twoRight {
+	border: 1px solid rgba(0, 203, 132, 0.5);
+	transition: 1s;
+}
+
+.Right:not(:hover) {
+	/*background:#DEE3E4;*/
+	background: #E4E4E4;
+	transition: 1s;
+}
+
+.Right::-webkit-scrollbar {
+	width: 20px;
+}
+
+.Right::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0);
+}
+.Right::-webkit-scrollbar-thumb:hover {
+	/*background-color: rgba(240, 236, 1, 1);*/
+	background-color: rgba(0, 203, 132, 0.5);
+}
+
+.oneRight {
+	margin-left: 2vw;
+	margin-top: 6vh;
+	height: 25vh;
+	padding-left: 1vw;
+	padding-top: 0.1vh;
+	border: 1px solid #CDCDCD;
+	border-radius:20px;
+}
+
+.sss {
+	padding-left: 1vw;
+}
+
+.Teext {
+	font-size: 20px;
+}
+
+.twoRight {
+	margin-left: 2vw;
+	height: 25vh;
+	padding-left: 1vw;
+	padding-top: 0.1vh;
+	margin-top: 3vh;
+	border: 1px solid #CDCDCD;
+	border-radius:20px;
+}
+
+.twoRight p {
+	font-size: 20px;
+}
+
+#nameRight {
+	font-size: 23px;
+	margin-left: 1.2vw;
+}
+
+#nameLeft {
+	font-family: 'Gardens';
+	font-size: 23px;
+	margin-left: 1.2vw;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 0.2fr 5fr 1fr;
+	/*background:#DEE3E4;*/
+	background: #E4E4E4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	padding-top: 5vh;
+	font-family: 'Gardens';
+	font-size: 18px;
+}
+
+.number {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.copy {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+@font-face 
+{ 
+	font-family: 'Future';  
+	src: url("future.otf") format("truetype"); /* все современные браузеры */
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+@font-face 
+{ 
+	font-family: 'Gardens';  
+	src: url("gardens.ttf") format("truetype"); /* все современные браузеры */
+	font-style: normal; 
+	font-weight: normal; 
+} 

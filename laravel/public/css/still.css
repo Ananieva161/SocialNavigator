@@ -1,0 +1,15 @@
+.mane {
+	margin-left: 4vw;
+	margin-top: 2vh;
+	margin-right: 6vw;
+	overflow-y: scroll;
+	height:69vh;
+	border: 1px solid #CDCDCD;
+	border-radius:20px;
+	font-family: 'Gardens';
+	font-size: 18px;
+}
+
+.lega {
+	font-size: 22px;
+}
