@@ -98,7 +98,7 @@ class VolunteersApplicationsController extends Controller
 		$number_of_vacansion = DB::table('tblactivities')->where('id_activities', $activity)->value('number_of_vacansion');
 		DB::update('update tblactivities set number_of_vacansion = ? where id_activities = ?',[$number_of_vacansion - 1, $activity]);
 		
-		//$application->save();
+		$application->save();
 		
 		return view('result_volunteer_form', $return_array);
     }

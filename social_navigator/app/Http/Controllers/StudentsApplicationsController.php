@@ -96,7 +96,7 @@ class StudentsApplicationsController extends Controller
 		$doctor_name = DB::table('tbldoctors')->where('id_doctor', $doctor)->value('doctor_name');
 		$return_array['doctor'] = $doctor_name;
 		
-		//$application->save();
+		$application->save();
 		
 		return view('result_doctor_form', $return_array);
     }
