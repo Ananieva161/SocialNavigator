@@ -1,17 +1,23 @@
-<!DOCTYPE html>
-<html lang = "ru">
+<?php
 
-	<head>
-		<title>
-			Navigator
-		</title>
-		
-		<meta charset="utf-8">	
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
-		<link rel="stylesheet" href="/css/qwerty.css" />
-	</head>
-
-	<body class = "Grid">
+class AddDateInTblcontent extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        DB::table('tblcontent')->insert(
+			['page_title' => 'Главная страница',
+			 'page_status' => true,
+			 'content' => '<body class = "Grid">
 	
 		<div class = "hat" >
 			
@@ -104,6 +110,23 @@
 			</div>
 		</div>
 		
-	</body>
+	</body>',
+			 'date_create' => '2021-12-07',
+			 'category' => 'static',
+			 'scripts' => '<link rel="stylesheet" href="/css/qwerty.css" />'
+			 ]
+		);
+            
+        
+    }
 
-</html>
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        DB::table('tblContent')->where('page_title', '=' ,'Главная страница')->delete();
+    }
+}

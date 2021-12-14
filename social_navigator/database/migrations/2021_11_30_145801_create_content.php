@@ -15,12 +15,12 @@ class CreateContent extends Migration
     {
         Schema::create('tblContent', function (Blueprint $table) {
             $table->increments('id_page')->autoIncrement();
-            $table->string('page_title');
-			$table->boolean('page_status');
-			$table->text('content');
-			$table->dateTime('date_create');
-			$table->string('category');
-			$table->text('scripts');
+            $table->string('page_title');//Название страницы
+			$table->boolean('page_status');//Добавлена/не добавлена
+			$table->text('content');//Что внутри какой код
+			$table->dateTime('date_create');//дата создания
+			$table->string('category');//статика-форма-что то другое
+			$table->text('scripts'); //подключаемые файлы
 						
             $table->timestamps();
         });

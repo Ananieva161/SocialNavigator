@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,32 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('Navi');
-});
+});*/
 
-Route::get('/Navi1', function () {
-    return view('Navi1');
-});
+Route::get('/', 'App\Http\Controllers\HomeController@getContent')->name('mains');
+
+
 
 Route::get('/Form_doctor', function () {
     return view('Form_doctor');
 });
 
-Route::get('/Navi2', function () {
-    return view('Navi2');
-});
+Route::get('/Navi1', 'App\Http\Controllers\DoctorController@getDoctor')->name('mains');
+
+Route::get('/Navi2', 'App\Http\Controllers\VolController@getVol')->name('mains');
 
 Route::get('/Form_activities', function () {
     return view('Form_activities');
 });
 
-Route::get('/href', function () {
-    return view('href');
-});
+#Route::get('/href', function () {
+#    return view('href');
+#});
 
 Route::get('/buildings', function () {
 	//сюда метод контролера
 	//Route::get('/si/time_control', 'Special\TimeControlController@main'); 
     return view('buildings');
 });
+
+Route::get('/{id}', 'App\Http\Controllers\HomeController@getStr');
