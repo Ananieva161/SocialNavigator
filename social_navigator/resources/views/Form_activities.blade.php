@@ -156,7 +156,7 @@
 		</div>
 		
 		<div class = "bady">
-			<form action="#" name="my_form" id="form">
+			<form action="/result_volunteer_form/" method="get" name="my_form" id="form">
 			<fieldset>
 			<legend>Запись на мероприятие</legend><br>
 			<p class="text_in_form">Пожалуйста, заполните форму:</p>

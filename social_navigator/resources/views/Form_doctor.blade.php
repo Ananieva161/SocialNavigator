@@ -151,7 +151,7 @@
 		</div>
 		
 		<div class = "bady">
-			<form action="#" name="my_form" id="form">
+			<form action="/result_doctor_form/" method="get" name="my_form" id="form">
 			<fieldset>
 			<legend>Запись к врачу</legend><br>
 			<p class="text_in_form">Пожалуйста, заполните форму:</p>
@@ -207,11 +207,11 @@
 							<label for="date_time">Дата и время приёма*:</label>
 							<select size="1" id="date_time" name="user_date_time" required>
 								<option selected disabled></option>
-								<option value="10.11.2021 17:00">10.11.2021 17:00</option>
-								<option value="11.11.2021 13:00">11.11.2021 13:00</option>
-								<option value="11.11.2021 15:00">11.11.2021 15:00</option>
-								<option value="11.11.2021 17:00">11.11.2021 17:00</option>
-								<option value="12.11.2021 13:00">12.11.2021 13:00</option>
+								<option value="2021-11-10 17:00:00">10.11.2021 17:00</option>
+								<option value="2021-11-11 13:00:00">11.11.2021 13:00</option>
+								<option value="2021-11-11 15:00:00">11.11.2021 15:00</option>
+								<option value="2021-11-11 17:00:00">11.11.2021 17:00</option>
+								<option value="2021-11-12 13:00:00">12.11.2021 13:00</option>
 							</select>
 						</div>
 			

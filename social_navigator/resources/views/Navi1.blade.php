@@ -50,8 +50,7 @@
 			</div>
 		</div>
 		
-		<div class = "bady">
-		
+		<div class = "bady">		
 			@foreach ($doctor as $s)
 				@if ($s->id_doctor == 1)
 					<div class = "Left">
@@ -113,7 +112,6 @@
 					</div>
 				@endif
 			@endforeach
-			
 		</div>
 		
 		<div class = "footer">

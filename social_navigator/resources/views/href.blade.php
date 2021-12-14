@@ -14,8 +14,3 @@
 	{!!$content->content!!}
 
 </html>
-
-
-
-
-
